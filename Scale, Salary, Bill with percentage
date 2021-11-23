@@ -1,0 +1,49 @@
+import 'dart:io';
+void main()
+{
+  double s;
+  print("Enter Your Scale");
+  s = double.parse(stdin.readLineSync()!);
+  var c;
+  if(s==10)
+  {
+  c=10000;
+  print("Bonus is $c");
+  }
+  if(s==11)
+  {
+  c=11000;
+  print("Bonus is $c");
+  }
+  if(s==12)
+  {
+  c=12000;
+  print("Bonus is $c"); 
+  }
+  if(s==13)
+  {
+  c=13000;
+  print("Bonus is $c"); 
+  }
+  if(s==14)
+  {
+  c=14000;
+  print("Bonus is $c"); 
+  }
+  if(s==15)
+  {
+  c=15000;
+  print("Bonus is $c"); 
+  }
+  double bill;
+  print("Enter Your Bill:");
+  bill = double.parse(stdin.readLineSync()!);
+    
+  double tb;
+  tb = bill-c;
+
+  
+  print(tb);
+  var n = tb*100/c;
+  print(n);
+}
